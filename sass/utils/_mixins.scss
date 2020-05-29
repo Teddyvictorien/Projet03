@@ -1,0 +1,31 @@
+
+@mixin bloc-vert{
+	background-color: $colour-primary;
+	color: $colour-yellow;
+}
+@mixin display{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;	
+}
+
+@mixin deg-1 {
+		background: -webkit-linear-gradient(left, #d8852e, #945ef6);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+}
+@mixin deg-2 {
+	background: -webkit-linear-gradient(left, #0531df, #0b88fb );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+@mixin deg-3 {
+	background: -webkit-linear-gradient(left, #419636, #80cb5e, #b5f77a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+@mixin deg-note {
+	background: -webkit-linear-gradient(left, #d42828, #ff6600);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
