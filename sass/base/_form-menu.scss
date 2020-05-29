@@ -1,0 +1,180 @@
+body, h1,h3,p {
+    margin: 0;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+}
+h1 a {
+    text-decoration: none;
+    color: $colour-yellow;
+}
+main {
+    width: 80%;
+    margin: auto;   
+    margin-bottom: 150px;
+
+    & h2 {
+        text-align: center;
+    }
+    & .bold{
+        font-weight:bold;
+    }
+}
+
+#menu_1 {
+    background-color: $colour-menu-1;
+    color: $colour-bdx;
+    padding-bottom: 40px;
+
+
+    & #titre_menu_1 {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        & i {
+            @include deg-note;
+            font-size: 3em;
+        }
+    }
+
+    & img {
+        width: 30%;
+        max-height: 15px;
+    }
+
+    & .intersection {
+        @include display;
+        margin-bottom: 40px;
+    }
+
+    & section {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    & #note-fin {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        & i {
+            @include deg-note;
+            font-size: 2em;
+            padding-right: 10px;
+        }
+    }
+}
+/*Menu2*/
+#menu_2 {
+    background-color: $colour-menu;
+    padding-bottom: 40px;
+
+    & #titre_menu_2 {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        & span {
+            @include deg-1;
+        }
+    }
+
+    & img {
+        width: 30%;
+        max-height: 15px;
+    }
+
+    & .intersection {
+        @include display;
+        margin-bottom: 40px;
+
+        & #menu_2_1 {
+            color: #c67412;
+        }
+
+        & #menu_2_2 {
+            color: #a56799;
+        }
+
+        & #menu_2_3 {
+            color: #6e4ccc;
+        }
+    }
+
+    & section {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+}
+/*menu 3*/
+#menu_3 {
+    background-color: $colour-menu;
+    padding-bottom: 40px;
+
+    & #titre_menu_3 {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        & span {
+            @include deg-2;
+        }
+    }
+
+    & img {
+        width: 30%;
+        max-height: 15px;
+    }
+
+    & .intersection {
+        @include display;
+        margin-bottom: 40px;
+    }
+
+    & section {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+}
+/*menu 4*/
+#menu_4 {
+    background-color: $colour-menu;
+    padding-bottom: 40px;
+
+    & #titre_menu_4 {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        & span {
+            @include deg-3;
+        }
+    }
+
+    & img {
+        width: 30%;
+        max-height: 15px;
+    }
+
+    & .intersection {
+        @include display;
+        margin-bottom: 40px;       
+    }
+
+    & section {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+}

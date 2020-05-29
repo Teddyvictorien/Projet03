@@ -9,6 +9,10 @@ body{
 main{
     margin-bottom:150px;
 }
+h1 a{
+    text-decoration:none;
+    color: $colour-yellow;
+}
 #search {
     & input {
         border: hidden;
