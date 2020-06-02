@@ -5,3 +5,44 @@ $colour-menu: #fff5fe;
 $colour-menu-1: #fcdfdb;
 $colour-bdx: #3d1319;
 /*polices*/
+
+@font-face {
+    font-family: "devonshire";
+    src: url("police/devonshire/Devonshire-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "open-sans";
+    src: url("police/open-sans/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("police/roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "kaushan";
+    src: url("police/kaushan-script/KaushanScript-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "darleston";
+    src: url("police/darleston/Darleston.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "dancing";
+    src: url("police/dancing-script-ot/DancingScript-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "croissant";
+    src: url("police/croissant-one/CroissantOne-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family:"kalam";
+    src: url("police/kalam/Kalam-Regular.ttf") format('truetype'); 
+}

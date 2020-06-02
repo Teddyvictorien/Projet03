@@ -12,21 +12,28 @@ h1 a {
 }
 main {
     width: 80%;
-    margin: auto;   
+    margin: auto;
     margin-bottom: 150px;
 
     & h2 {
         text-align: center;
+        font-family: sans-serif;
     }
-    & .bold{
-        font-weight:bold;
-    }
+
+    & .bold {
+        font-weight: bold;
+    }  
+}
+.short {
+    width: 80%;
+    margin: auto;
 }
 
 #menu_1 {
     background-color: $colour-menu-1;
     color: $colour-bdx;
     padding-bottom: 40px;
+    font-family: kalam;
 
 
     & #titre_menu_1 {
@@ -34,20 +41,27 @@ main {
         padding-top: 60px;
         padding-bottom: 60px;
 
+        & h2 {
+            font-family: devonshire;
+            font-size: 3em;
+            font-weight: normal;
+        }
+
         & i {
             @include deg-note;
-            font-size: 3em;
+            font-size: 4em;
         }
     }
 
     & img {
         width: 30%;
-        max-height: 15px;
+        max-height: 20px;
     }
 
     & .intersection {
         @include display;
         margin-bottom: 40px;
+        font-size: 1.25em;
     }
 
     & section {
@@ -55,6 +69,15 @@ main {
         margin: auto;
         text-align: center;
         margin-bottom: 80px;
+
+        & p {
+            padding-bottom: 10px;
+        }
+
+        &.short {
+            width: 80%;
+            margin: auto;
+        }
     }
 
     & #note-fin {
@@ -62,6 +85,11 @@ main {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+
+        & span {
+            font-family: devonshire;
+            font-size: 1.5em;
+        }
 
         & i {
             @include deg-note;
@@ -74,6 +102,7 @@ main {
 #menu_2 {
     background-color: $colour-menu;
     padding-bottom: 40px;
+    font-family: typocomics;
 
     & #titre_menu_2 {
         text-align: center;
@@ -82,6 +111,8 @@ main {
 
         & span {
             @include deg-1;
+            font-family: typocomics;
+            font-size: 2.5em;
         }
     }
 
@@ -93,18 +124,18 @@ main {
     & .intersection {
         @include display;
         margin-bottom: 40px;
+    }
 
-        & #menu_2_1 {
-            color: #c67412;
-        }
+    & #menu_2_1 {
+        color: #c67412;
+    }
 
-        & #menu_2_2 {
-            color: #a56799;
-        }
+    & #menu_2_2 {
+        color: #a56799;
+    }
 
-        & #menu_2_3 {
-            color: #6e4ccc;
-        }
+    & #menu_2_3 {
+        color: #6e4ccc;
     }
 
     & section {
@@ -112,12 +143,22 @@ main {
         margin: auto;
         text-align: center;
         margin-bottom: 80px;
+
+        &.short {
+            width: 80%;
+            margin: auto;
+        }
+    }
+
+    & p {
+        padding-bottom: 10px;
     }
 }
 /*menu 3*/
 #menu_3 {
     background-color: $colour-menu;
     padding-bottom: 40px;
+    font-family: kalam;
 
     & #titre_menu_3 {
         text-align: center;
@@ -126,6 +167,9 @@ main {
 
         & span {
             @include deg-2;
+            font-family: dancing;
+            font-size: 2em;
+            font-weight: normal;
         }
     }
 
@@ -137,19 +181,28 @@ main {
     & .intersection {
         @include display;
         margin-bottom: 40px;
+
+        & h3 {
+            font-weight: normal;
+        }
     }
 
     & section {
         width: 80%;
         margin: auto;
         text-align: center;
-        margin-bottom: 80px;
+        margin-bottom: 80px;       
+    }
+
+    & p {
+        padding-bottom: 10px;
     }
 }
 /*menu 4*/
 #menu_4 {
     background-color: $colour-menu;
     padding-bottom: 40px;
+    font-family: kalam;
 
     & #titre_menu_4 {
         text-align: center;
@@ -158,6 +211,9 @@ main {
 
         & span {
             @include deg-3;
+            font-family: kaushan;
+            font-size: 2em;
+            font-weight: normal;
         }
     }
 
@@ -168,7 +224,11 @@ main {
 
     & .intersection {
         @include display;
-        margin-bottom: 40px;       
+        margin-bottom: 40px;
+
+        & h3 {
+            font-weight: normal;
+        }
     }
 
     & section {
@@ -176,5 +236,33 @@ main {
         margin: auto;
         text-align: center;
         margin-bottom: 80px;
+    }
+
+    & p {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:992px){
+    main{
+        width:70%;
+    }
+    #menu_1 section {
+            text-align: justify;
+    }
+    #menu_2 section {      
+       text-align: justify;           
+        
+    }
+    
+    #menu_3 section {
+        text-align: justify;
+    }
+    #menu_4 section {
+        text-align: justify;
+    }
+    .display{
+        display:flex;
+        justify-content:space-between;
     }
 }
