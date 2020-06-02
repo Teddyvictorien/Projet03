@@ -19,7 +19,7 @@ main {
         text-align: center;
         font-family: sans-serif;
     }
-
+    
     & .bold {
         font-weight: bold;
     }  
@@ -57,12 +57,29 @@ main {
         width: 30%;
         max-height: 20px;
     }
-
+    .border{
+        background-color:transparent;
+        height:2px;
+    }
     & .intersection {
         @include display;
         margin-bottom: 40px;
         font-size: 1.25em;
+
+        & .btn {
+            &:hover {
+                & .border {
+                    background-color: $colour-bdx;
+                    height: 2px;
+                    transform-origin:left;
+                    animation:border 1s;
+                }
+            }            
+        }
+        
     }
+
+    
 
     & section {
         width: 80%;
@@ -242,6 +259,16 @@ main {
         padding-bottom: 10px;
     }
 }
+@keyframes border {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
 
 @media screen and (min-width:992px){
     main{

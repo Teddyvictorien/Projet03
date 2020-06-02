@@ -90,12 +90,22 @@ main .bold {
   width: 30%;
   max-height: 20px;
 }
+#menu_1 .border {
+  background-color: transparent;
+  height: 2px;
+}
 #menu_1 .intersection {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
   font-size: 1.25em;
+}
+#menu_1 .intersection .btn:hover .border {
+  background-color: #3d1319;
+  height: 2px;
+  transform-origin: left;
+  animation: border 1s;
 }
 #menu_1 section {
   width: 80%;
@@ -263,6 +273,14 @@ main .bold {
   padding-bottom: 10px;
 }
 
+@keyframes border {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 @media screen and (min-width: 992px) {
   main {
     width: 70%;
@@ -327,7 +345,21 @@ footer p {
   }
 
   footer p:hover {
-    animation: shake 1s;
+    animation: shake 1.5s;
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translateX(-1px);
+  }
+  20%, 80% {
+    transform: translateX(2px);
+  }
+  30%, 50%, 70% {
+    transform: translateX(-4px);
+  }
+  40%, 60% {
+    transform: translateX(4px);
   }
 }
 
