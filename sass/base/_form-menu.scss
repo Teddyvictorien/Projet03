@@ -38,7 +38,7 @@ main {
 
     & #titre_menu_1 {
         text-align: center;
-        padding-top: 60px;
+        padding-top: 10px;
         padding-bottom: 60px;
 
         & h2 {
@@ -57,10 +57,12 @@ main {
         width: 30%;
         max-height: 20px;
     }
-    .border{
-        background-color:transparent;
-        height:2px;
+
+    .border {
+        background-color: transparent;
+        height: 2px;
     }
+
     & .intersection {
         @include display;
         margin-bottom: 40px;
@@ -71,15 +73,14 @@ main {
                 & .border {
                     background-color: $colour-bdx;
                     height: 2px;
-                    transform-origin:left;
-                    animation:border 1s;
+                    transform-origin: left;
+                    animation: border 1s;
                 }
-            }            
+            }
         }
-        
     }
 
-    
+
 
     & section {
         width: 80%;
@@ -138,9 +139,39 @@ main {
         max-height: 15px;
     }
 
+    .border {
+        background-color: transparent;
+        height: 2px;
+    }
+
     & .intersection {
         @include display;
         margin-bottom: 40px;
+
+        & .btn {
+            &:hover {
+                & .color1 {
+                    background-color: #c67412;
+                    height: 2px;
+                    transform-origin: left;
+                    animation: border 1s;
+                }
+
+                & .color2 {
+                    background-color: #a56799;
+                    height: 2px;
+                    transform-origin: left;
+                    animation: border 1s;
+                }
+
+                & .color3 {
+                    background-color: #6e4ccc;
+                    height: 2px;
+                    transform-origin: left;
+                    animation: border 1s;
+                }
+            }
+        }
     }
 
     & #menu_2_1 {
@@ -195,9 +226,25 @@ main {
         max-height: 15px;
     }
 
+    .border {
+        background-color: transparent;
+        height: 2px;
+    }
+
     & .intersection {
         @include display;
         margin-bottom: 40px;
+
+        & .btn {
+            &:hover {
+                & .border {
+                    background-color: black;
+                    height: 2px;
+                    transform-origin: left;
+                    animation: border 1s;
+                }
+            }
+        }
 
         & h3 {
             font-weight: normal;
@@ -208,7 +255,7 @@ main {
         width: 80%;
         margin: auto;
         text-align: center;
-        margin-bottom: 80px;       
+        margin-bottom: 80px;
     }
 
     & p {
@@ -239,9 +286,25 @@ main {
         max-height: 15px;
     }
 
+    .border {
+        background-color: transparent;
+        height: 2px;
+    }
+
     & .intersection {
         @include display;
         margin-bottom: 40px;
+
+        & .btn {
+            &:hover {
+                & .border {
+                    background-color: black;
+                    height: 2px;
+                    transform-origin: left;
+                    animation: border 1s;
+                }
+            }
+        }
 
         & h3 {
             font-weight: normal;
@@ -274,6 +337,12 @@ main {
     main{
         width:70%;
     }
+    #menu_1 {
+        & #titre_menu_1 {
+            padding-top: 60px;
+        }
+    }
+    
     #menu_1 section {
             text-align: justify;
     }

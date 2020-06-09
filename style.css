@@ -81,16 +81,6 @@ main {
   color: #3d1319;
   font-family: kalam;
 }
-#main_menu #main_menu_1 .zoom {
-  text-align: center;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 1s;
-}
-#main_menu #main_menu_1 .zoom:hover {
-  transform: scale(2.5);
-  opacity: 0.5;
-}
 #main_menu #main_menu_2 {
   background-color: #fff5fe;
 }
@@ -101,15 +91,6 @@ main {
 }
 #main_menu #main_menu_2 a {
   color: #c67412;
-}
-#main_menu #main_menu_2 .zoom {
-  text-align: center;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 1s;
-}
-#main_menu #main_menu_2 .zoom:hover {
-  transform: scale(1.7);
 }
 #main_menu #main_menu_3 {
   background-color: #fff5fe;
@@ -125,15 +106,6 @@ main {
   font-family: kalam;
   font-weight: normal;
 }
-#main_menu #main_menu_3 .zoom {
-  text-align: center;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 1s;
-}
-#main_menu #main_menu_3 .zoom:hover {
-  transform: scale(1.9);
-}
 #main_menu #main_menu_4 {
   background-color: #fff5fe;
 }
@@ -148,26 +120,19 @@ main {
   font-family: kalam;
   font-weight: normal;
 }
-#main_menu #main_menu_4 .zoom {
-  text-align: center;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 1s;
-}
-#main_menu #main_menu_4 .zoom:hover {
-  transform: scale(2);
-}
 #main_menu section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   width: 80%;
-  max-width: 350px;
+  max-width: 550px;
   height: 500px;
   margin: auto;
   margin-bottom: 40px;
   border: 2px rgba(0, 0, 0, 0.05) solid;
+  overflow: hidden;
 }
 #main_menu section a {
   text-decoration: none;
@@ -229,9 +194,58 @@ main {
   #main_menu {
     width: 70%;
   }
+  #main_menu section {
+    font-size: 1.3em;
+    width: 45%;
+    height: 750px;
+  }
   #main_menu .bloc_menu {
     display: flex;
     justify-content: space-between;
+  }
+
+  #main_menu_1 .zoom {
+    text-align: center;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1s;
+  }
+  #main_menu_1 .zoom:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+
+  #main_menu_2 .zoom {
+    text-align: center;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1s;
+  }
+  #main_menu_2 .zoom:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+
+  #main_menu_3 .zoom {
+    text-align: center;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1s;
+  }
+  #main_menu_3 .zoom:hover {
+    transform: scale(1.15);
+    opacity: 0.5;
+  }
+
+  #main_menu_4 .zoom {
+    text-align: center;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1s;
+  }
+  #main_menu_4 .zoom:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
   }
 }
 header {

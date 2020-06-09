@@ -72,7 +72,7 @@ main .bold {
 }
 #menu_1 #titre_menu_1 {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 10px;
   padding-bottom: 60px;
 }
 #menu_1 #titre_menu_1 h2 {
@@ -160,11 +160,33 @@ main .bold {
   width: 30%;
   max-height: 15px;
 }
+#menu_2 .border {
+  background-color: transparent;
+  height: 2px;
+}
 #menu_2 .intersection {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+}
+#menu_2 .intersection .btn:hover .color1 {
+  background-color: #c67412;
+  height: 2px;
+  transform-origin: left;
+  animation: border 1s;
+}
+#menu_2 .intersection .btn:hover .color2 {
+  background-color: #a56799;
+  height: 2px;
+  transform-origin: left;
+  animation: border 1s;
+}
+#menu_2 .intersection .btn:hover .color3 {
+  background-color: #6e4ccc;
+  height: 2px;
+  transform-origin: left;
+  animation: border 1s;
 }
 #menu_2 #menu_2_1 {
   color: #c67412;
@@ -212,11 +234,21 @@ main .bold {
   width: 30%;
   max-height: 15px;
 }
+#menu_3 .border {
+  background-color: transparent;
+  height: 2px;
+}
 #menu_3 .intersection {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+}
+#menu_3 .intersection .btn:hover .border {
+  background-color: black;
+  height: 2px;
+  transform-origin: left;
+  animation: border 1s;
 }
 #menu_3 .intersection h3 {
   font-weight: normal;
@@ -254,11 +286,21 @@ main .bold {
   width: 30%;
   max-height: 15px;
 }
+#menu_4 .border {
+  background-color: transparent;
+  height: 2px;
+}
 #menu_4 .intersection {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+}
+#menu_4 .intersection .btn:hover .border {
+  background-color: black;
+  height: 2px;
+  transform-origin: left;
+  animation: border 1s;
 }
 #menu_4 .intersection h3 {
   font-weight: normal;
@@ -284,6 +326,10 @@ main .bold {
 @media screen and (min-width: 992px) {
   main {
     width: 70%;
+  }
+
+  #menu_1 #titre_menu_1 {
+    padding-top: 60px;
   }
 
   #menu_1 section {
