@@ -59,7 +59,7 @@ main {
 }
 
 #main_menu {
-  width: 85%;
+  width: 90%;
   margin: auto;
   margin-top: 50px;
 }
@@ -126,8 +126,8 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 80%;
-  max-width: 550px;
+  width: 90%;
+  max-width: 300px;
   height: 500px;
   margin: auto;
   margin-bottom: 40px;
@@ -136,10 +136,10 @@ main {
 }
 #main_menu section a {
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 #main_menu section p {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 #soon {
@@ -191,13 +191,10 @@ main {
 }
 
 @media screen and (min-width: 992px) {
-  #main_menu {
-    width: 70%;
-  }
   #main_menu section {
     font-size: 1.3em;
-    width: 45%;
-    height: 750px;
+    max-width: 500px;
+    height: 650px;
   }
   #main_menu .bloc_menu {
     display: flex;

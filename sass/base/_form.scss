@@ -24,13 +24,15 @@ main{
 }
 
 #main_menu {
-    width: 85%;
+    width: 90%;
     margin: auto;
     margin-top: 50px;
 
     #main_menu_1 {
         background-color: $colour-menu-1;
         color: $colour-bdx;
+        
+        
 
         & i {
             @include deg-note;
@@ -97,8 +99,8 @@ main{
         align-items: center;
         justify-content: center;
         text-align:center;
-        width: 80%;
-        max-width: 550px;
+        width: 90%;
+        max-width: 300px;
         height: 500px;
         margin: auto;
         margin-bottom: 40px;
@@ -107,11 +109,11 @@ main{
 
         & a {
             text-decoration: none;
-            font-size: 1.5em;
+            font-size: 1.4em;
         }
 
         & p {
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
     }
 }
@@ -169,13 +171,12 @@ main{
 }
 
 @media screen and (min-width: 992px){
-    #main_menu {
-        width: 70%;
+    #main_menu {       
 
         & section {
             font-size: 1.3em;
-            width: 45%;
-            height: 750px;
+            max-width: 500px;
+            height: 650px;
         }
 
         & .bloc_menu {
