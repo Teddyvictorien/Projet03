@@ -1,13 +1,17 @@
 
 
-header  {
+header {
 	@include bloc-vert;
-	font-size:1.5em;
-	text-align:center;
-	padding-bottom:40px;
-	padding-top:40px;
+	font-size: 1.5em;
+	text-align: center;
+	padding-bottom: 40px;
+	padding-top: 40px;
 	font-family: open-sans;
-	
+
+	& a {
+		color: $colour-yellow;
+		text-decoration: none;
+	}
 }
 footer {
 	@include bloc-vert;

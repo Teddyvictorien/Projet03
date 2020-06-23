@@ -254,6 +254,10 @@ header {
   padding-top: 40px;
   font-family: open-sans;
 }
+header a {
+  color: #f0C64C;
+  text-decoration: none;
+}
 
 footer {
   background-color: #579c87;
