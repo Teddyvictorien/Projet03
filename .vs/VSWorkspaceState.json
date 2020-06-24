@@ -4,9 +4,9 @@
     "\\sass",
     "\\sass\\base",
     "\\sass\\layout",
-    "\\sass\\pages",
-    "\\sass\\utils"
+    "\\sass\\utils",
+    "\\sass\\vendors"
   ],
-  "SelectedNode": "\\menu4.html",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
